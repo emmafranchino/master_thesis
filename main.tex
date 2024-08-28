@@ -1,0 +1,99 @@
+\documentclass[a4paper, twoside, openright]{book}
+
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, centering]{geometry}
+
+\usepackage[american]{babel}
+
+\usepackage[bibstyle=authoryear, citestyle=apa, dashed=false, backend=biber, block=space, language=english]{biblatex}
+\usepackage{csquotes}
+
+\addbibresource{bibliography.bib}
+
+\usepackage{graphicx}
+
+\usepackage{subcaption}
+
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+
+\usepackage{fancyhdr}
+
+\usepackage{emptypage}
+
+\usepackage{amsmath}
+
+\usepackage{float}
+
+\linespread{1.5}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\titleformat{\chapter}
+{\normalfont\huge\bfseries}{\thechapter.}{0.5em}{\huge}
+
+\titlespacing*{\chapter}{0pt}{-40pt}{25pt}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{\normalsize}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\fancyfoot[R]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{15pt}
+
+\fancypagestyle{plain}{
+  \fancyfoot[R]{\textbf{\thepage}}
+  \fancyhead{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\hypersetup{
+    colorlinks,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+%--------------------------------
+\begin{document}
+
+\input{Cover}
+
+\cleardoublepage
+\newpage 
+\thispagestyle{empty}
+\begin{flushleft}
+  \vspace*{15em}
+  \textbf{Abstract}: Hopefully this is a good thesis \\
+  \vspace*{7em}
+  \textbf{Keywords}: good, thesis
+\end{flushleft}
+
+\tableofcontents
+
+\input{Chapters/Acknowledgements.tex}
+
+\input{Chapters/Introduction.tex}
+
+\input{Chapters/Methodology.tex}
+
+\input{Chapters/Results.tex}
+
+\input{Chapters/Discussion.tex}
+
+\input{Chapters/Conclusion.tex}
+
+\input{Chapters/Appendix.tex}
+
+% \nocite{*}
+\printbibliography[heading=bibintoc]
+
+\end{document}
