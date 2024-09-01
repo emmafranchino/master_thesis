@@ -9,50 +9,102 @@
 \end{figure}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.95\textwidth]{appendix/database.png}
-    \caption{Participants database with results}
-    \label{fig: database}
-\end{figure}
-\begin{figure}[ht]
-    \centering
     \includegraphics[width=0.70\textwidth]{appendix/questions.png}
-    \caption{Participants database with results}
+    \caption{Behavioral questions}
     \label{fig: Behavioral questions}
 \end{figure}
 
 \clearpage
 \section*{Results}
-\subsection*{Activity power spectrum}
+\subsection*{Signal-To-Noise (SNR)}
+\subsubsection*{Control group}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{healthy_images/allROI_graph.png}
-    \caption{Activity peaks taking all the ROIs in consideration}
-    \label{fig: allROI}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{healthy_images/rhythmic_condition_snr.png}
+        \caption{SNR in the rhythmic condition}
+        \label{fig: snr_rhythmic: control}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{healthy_images/random_condition_snr.png}
+        \caption{SNR in the random condition}
+        \label{fig: snr_random: control}
+    \end{subfigure}
+    \caption{SNR comparison in the control group}
+    \label{fig: snr_control_group}
 \end{figure}
+
+\subsubsection*{Stroke group}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{stroke_images/rhythmic_snr.png}
+        \caption{SNR in the rhythmic condition}
+        \label{fig: snr_rhythmic: stroke}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{stroke_images/random_snr.png}
+        \caption{SNR in the random condition}
+        \label{fig: snr_random: stroke}
+    \end{subfigure}
+    \caption{SNR comparison in the stroke group}
+    \label{fig: snr_stroke_group}
+\end{figure}
+
+\clearpage
+\subsection*{Activity power spectrum}
+\subsubsection*{Control group}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{healthy_images/occipitalROI_graph.png}
     \caption{Activity peak in the occipital ROI}
-    \label{fig: occipital ROI}
+    \label{fig: occipital ROI: control}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{healthy_images/temporalROI_graph.png}
     \caption{Activity peak in the temporal ROI}
-    \label{fig: temporal ROI}
+    \label{fig: temporal ROI: control}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{healthy_images/sensorimotorROI_graph.png}
     \caption{Activity peak in the sensorimotor ROI}
-    \label{fig: sensorimotor ROI} 
+    \label{fig: sensorimotor ROI: control} 
 \end{figure} 
+
+\subsubsection*{Stroke group}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{stroke_images/occipital_roi.png}
+    \caption{Activity peak in the occipital ROI: stroke group}
+    \label{fig: occipital ROI: stroke}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{stroke_images/temporal_roi.png}
+    \caption{Activity peak in the temporal ROI:stroke group}
+    \label{fig: temporal ROI: stroke}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{stroke_images/sensorimotor_roi.png}
+    \caption{Activity peak in the sensorimotor ROI: stroke group}
+    \label{fig: sensorimotor ROI: stroke} 
+\end{figure} 
+\vfill
 
 \clearpage
 \subsection*{Topographies}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{healthy_images/topo.png}
+    \includegraphics[width=0.95\textwidth]{healthy_images/topo.png}
     \caption{Topographies related to the activity in the control group}
     \label{fig: topographies control group}
 \end{figure}
@@ -74,51 +126,25 @@
     \caption{3D topographies related to the activity in stroke population}
     \label{fig: 3D topographies stroke group}   
 \end{figure} 
-
 \clearpage
-\subsection*{Bar plots related to behavioral questions}
-% \subsubsection*{Total population}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{bar_plots/bar_visual_t.png}
-%     \caption{Results of behavioral question in the visual condition in the total population}
-%     \label{fig: bar_visual_Total} 
-% \end{figure}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{bar_plots/bar_audio_t.png}
-%     \caption{Results of behavioral question in the audio condition in the total population}
-%     \label{fig: bar_audio_Total} 
-% \end{figure} 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{bar_plots/bar_audiovisual_t.png}
-%     \caption{Results of behavioral question in the audiovisual condition in the total population}
-%     \label{fig: bar_audiovisual_Total} 
-% \end{figure}  
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.55\textwidth]{significance_tables/total_pop.png}
-%     \caption{Significance of the results of behavioral questions in the total population, using Wilcoxon Signed-Rank Test (\textit{W})}
-%     \label{fig: significance_total_pop} 
-% \end{figure} 
 
+\subsection*{Bar plots related to behavioral questions}
 \subsubsection*{Control group}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_visual_h.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_visual_h.png}
     \caption{Results of behavioral question in the visual condition in the control group}
     \label{fig: bar_control_Total} 
 \end{figure} 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_audio_h.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_audio_h.png}
     \caption{Results of behavioral question in the audio condition in the control group}
     \label{fig: bar_audio_control} 
 \end{figure} 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_audiovisual_h.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_audiovisual_h.png}
     \caption{Results of behavioral question in the audiovisual condition in the control group}
     \label{fig: bar_audiovisual_control} 
 \end{figure} 
@@ -132,19 +158,19 @@
 \subsubsection*{Stroke group}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_visual_s.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_visual_s.png}
     \caption{Results of behavioral question in the visual condition in stroke population}
     \label{fig: bar_visual_stroke} 
 \end{figure} 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_audio_s.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_audio_s.png}
     \caption{Results of behavioral question in the audio condition in stroke population}
     \label{fig: bar_audio_stroke} 
 \end{figure} 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{bar_plots/bar_audvis_s.png}
+    \includegraphics[width=0.85\textwidth]{bar_plots/plotbar_audiovisual_s.png}
     \caption{Results of behavioral question in the audiovisual condition in stroke population}
     \label{fig: bar_audiovisual_stroke} 
 \end{figure} 
@@ -156,23 +182,10 @@
 \end{figure} 
 
 \subsubsection*{Total results mean}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{bar_plots/mean_questions.png}
-%     \caption{Mean of the results of all behavioral question in both population groups}
-%     \label{fig: mean_total} 
-% \end{figure} 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.65\textwidth]{significance_tables/tot_mean.png}
-%     \caption{Significance of the results of all the behavioral questions, using Wilcoxon Signed-Rank Test (\textit{W}) or Paired Samples t-Test (\textit{t})}
-%     \label{fig: significance_tot_mean} 
-% \end{figure} 
-% \clearpage
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{bar_plots/mean stroke and control.png}
-    \caption{Mean of the results of all behavioral question divided by population groups}
+    \caption{Mean of the results of all behavioral question divided by population groups (CG = control group; SG = stroke group)}
     \label{fig: mean_population_condition} 
 \end{figure} 
 \begin{figure}[H]
@@ -182,44 +195,44 @@
     \label{fig: significance_total_mean_pop} 
 \end{figure} 
 
-\clearpage
-\subsection*{Correlation between physical activity and brain activation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/correlation_healthy.png}
-    \caption{Correlation between activity and neural activation in the control group}
-    \label{fig: correlation control} 
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/correlation_stroke.png}
-    \caption{Correlation between activity and neural activation in the stroke population}
-    \label{fig: correlation stroke} 
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/corr_values_activeq.png}
-    \caption{Correlation values: Pearson correlation coefficient \textit{r} and \textit{p} value}
-    \label{fig: correlation values} 
-\end{figure}
+% \clearpage
+% \subsection*{Correlation between physical activity and brain activation}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/correlation_healthy.png}
+%     \caption{Correlation between activity and neural activation in the control group}
+%     \label{fig: correlation control} 
+% \end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/correlation_stroke.png}
+%     \caption{Correlation between activity and neural activation in the stroke population}
+%     \label{fig: correlation stroke} 
+% \end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/corr_values_activeq.png}
+%     \caption{Correlation values: Pearson correlation coefficient \textit{r} and \textit{p} value}
+%     \label{fig: correlation values} 
+% \end{figure}
 
-\clearpage
-\subsection*{Correlation between brain activation and behavioral questions}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/corr_na_q_control.png}
-    \caption{Correlation between neural activation and behavioral questions in the control group}
-    \label{fig: correlation control questions} 
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/corr_na_q_stroke.png}
-    \caption{Correlation between neural activation and behavioral questions in the stroke population}
-    \label{fig: correlation stroke questions} 
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{correlations/corr_values_na_q.png}
-    \caption{Correlation values: Pearson correlation coefficient \textit{r} and \textit{p} value}
-    \label{fig: correlation values questions} 
-\end{figure}
+% \clearpage
+% \subsection*{Correlation between brain activation and behavioral questions}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/corr_na_q_control.png}
+%     \caption{Correlation between neural activation and behavioral questions in the control group}
+%     \label{fig: correlation control questions} 
+% \end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/corr_na_q_stroke.png}
+%     \caption{Correlation between neural activation and behavioral questions in the stroke population}
+%     \label{fig: correlation stroke questions} 
+% \end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{correlations/corr_values_na_q.png}
+%     \caption{Correlation values: Pearson correlation coefficient \textit{r} and \textit{p} value}
+%     \label{fig: correlation values questions} 
+% \end{figure}
