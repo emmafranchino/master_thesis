@@ -99,3 +99,38 @@ We then proceeded to insert the obtained values in an Excel file together with t
 For the behavioral questions we have to precise that we decided to take into account for this correlation just the second question (q2), because considered as the most significant, as strictly related to the rhythm.
 
 All the graphs and statistical analysis for the behavioral results were made with Python.
+
+%% for SNR: %Cutted frequency vector
+%%%
+%CRACCO
+%         % Define the number of bins to use for baseline correction
+%         n_bins=10;
+%         % Distance in bins between the selected bin and the bins used for baseline correction
+%         dist=1;
+%         % Bin margins
+%         margin_bin = n_bins + dist + 1;
+        
+%NORAZADAN 2013
+        % Define the number of bins to use for baseline correction
+%         n_bins=2;
+%         % Distance in bins between the selected bin and the bins used for baseline correction
+%         dist=2;
+%         % Bin margins
+%         margin_bin = n_bins + dist + 1;
+
+% % Loop over each frequency bin
+% zbins = 1;
+% for freq_bin=margin_bin:size(grand_avg,1)-margin_bin
+        
+%         % Define the indices of the baseline bins
+%         baseline_bins = [freq_bin-n_bins-dist:freq_bin-dist freq_bin+dist:freq_bin+n_bins+dist];
+        
+%         % Compute the mean amplitude of the baseline bins
+%         baseline_mean = mean(grand_avg(baseline_bins),1);
+        
+%         % Calculate the SNS and SNR at the current frequency bin
+%         grand_sns(zbins,1) = (grand_avg(freq_bin) - baseline_mean); %Despite it is not explained, this formula maybe is used in Cracco 2021 to obtain the SNSs (see figure 3)
+%         grand_snr(zbins,1) = grand_avg(freq_bin)/ baseline_mean; %To calculate the signal-to-noise ratio (SNR) for each frequency bin of your grand_avg matrix, you would need to divide the signal power at that frequency bin by the noise power at that frequency bin. The noise power at each frequency bin can be estimated by calculating the average power of the noise in a frequency band around that bin. This can be done by calculating the average of the power spectral density (PSD) values in that frequency band.
+        
+%         zbins = zbins +1;
+end
