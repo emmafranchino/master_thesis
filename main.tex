@@ -25,6 +25,8 @@
 
 \usepackage{float}
 
+\usepackage[toc]{appendix}
+
 \linespread{1.5}
 
 \setcounter{secnumdepth}{3}
@@ -91,9 +93,11 @@
 
 \input{Chapters/Conclusion.tex}
 
+\begin{appendices}
+  \fancyhead[L]{APPENDICES}
 \input{Chapters/Appendix.tex}
+\end{appendices}
 
-% \nocite{*}
 \printbibliography[heading=bibintoc]
 
 \end{document}
