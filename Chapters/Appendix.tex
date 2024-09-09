@@ -1,4 +1,6 @@
-\chapter*{Appendix: Experimental material}
+\appendix
+
+\section{Appendix: Experimental Material}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{appendix/met_values.png}
@@ -14,12 +16,16 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.70\textwidth]{appendix/database_stroke.png}
-    \caption{Database for stroke population}
+    \caption{Database for stroke population (Gender: 1 = man; 2 = woman) }
     \label{fig: Database stroke}
 \end{figure}
 
 \clearpage
-\includepdf[scale=0.9, pages=-]{appendix/Active-Q test.pdf}
-\label{pdf: Active-Q questionnaire}
+% \section{Appendix: Active-Q Questionnaire}
+% \label{pdf: Active-Q questionnaire}
+\includepdf[scale=0.8, pages=1, 
+    pagecommand={\section{Appendix: Active-Q questionnaire}\label{pdf: Active-Q questionnaire}}]{appendix/Active-Q test.pdf}
+\includepdf[scale=0.8, pages=2-, 
+    pagecommand={}]{appendix/Active-Q test.pdf}
 
 \clearpage
